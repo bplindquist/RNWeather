@@ -1,4 +1,8 @@
 {
+  "name": "rn-weather",
+  "version": "1.0.0",
+  "license": "TheUnlicense",
+  "author": "Brian Lindquist",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
