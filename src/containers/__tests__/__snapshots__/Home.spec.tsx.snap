@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders successfully 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "flex": 1,
+      "marginVertical": 24,
+    }
+  }
+  keyboardShouldPersistTaps="handled"
+>
+  <View>
+    <Text>
+      Mock
+    </Text>
+  </View>
+</RCTScrollView>
+`;
