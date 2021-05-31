@@ -1,7 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import { weatherReducer } from "./state/weather";
+import { locationReducer } from "./state/location";
 
-const rootReducer = combineReducers({ weatherReducer });
+const rootReducer = combineReducers({ locationReducer });
 
 export const store = configureStore({
   reducer: rootReducer,

@@ -1,16 +1,19 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
 import { Provider } from "react-redux";
-import { MainView } from "./containers/MainView";
+import { NativeRouter as Router } from "react-router-native";
 import { store } from "./store";
+import { Routes } from "./routes";
 
 export const App = () => {
   return (
-    <Provider store={store}>
-      <View style={styles.container}>
-        <MainView />
-      </View>
-    </Provider>
+    <SafeAreaView style={styles.container}>
+      <Provider store={store}>
+        <Router>
+          <Routes />
+        </Router>
+      </Provider>
+    </SafeAreaView>
   );
 };
 
@@ -18,9 +21,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginHorizontal: 8,
-    marginVertical: 8,
+    marginVertical: 16,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
